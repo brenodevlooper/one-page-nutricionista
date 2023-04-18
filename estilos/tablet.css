@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --verde-escuro: #34592A;
+    --verde-claro: #B5CE56;
+    --verde-medio: #8FA532;
+}
+
+
+#present {
+
+    padding: 80px 30px;
+
+    background-color: #efefec;
+    color: white;
+
+    background-image:  linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #B5CE56 100%), url(../imagens/backgrounds/bnn-breno.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    font-family: 'Urbanist', sans-serif;
+}
+
+h2 {
+    font-family: 'Urbanist', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#present h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+#present h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#present p {
+    margin-bottom: 30px;
+
+}
+
+#present a {
+    padding: 15px;
+    
+    border: 3px solid white;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#about {
+
+    background-color: #efefec;
+    display: flex;
+    width: 100%;
+    
+    
+    
+    
+}#abouttext {
+    width: 50%;
+    padding: 20px;
+}
+
+#smilebg {
+    width: 50%;
+    padding: 20px;
+    
+    
+}
+
+#smilebg img {
+    width: 100%;
+    border: 2px solid var(--verde-claro);
+    border-radius: 20px;
+    border-left: var(--verde-claro);
+}
+
+#about h1 {
+    font-size: 30px;
+    font-family: 'Urbanist', sans-serif;
+    padding: 15px;
+    padding-bottom: 5px;
+    
+    
+}
+
+#about h2 {
+    font-size: 25px;
+    padding: 15px;
+    color: var(--verde-medio);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: light;
+    
+
+}
+
+#about p {
+    padding: 15px;
+    color: rgb(26, 26, 26);
+    
+}
+
+
+
+
