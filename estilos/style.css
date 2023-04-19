@@ -17,6 +17,211 @@
     --verde-medio: #8FA532;
 }
 
+
+.seta-topo {
+    position: fixed;
+    
+    z-index: 9999;
+    display: block;
+    
+    text-indent: -9999px;
+    background-color: var(--verde-claro);
+    border: solid var(--verde-medio);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  transition: opacity 0.2s ease-out;
+  animation: fadeIn 1s forwards;
+  
+  bottom: 3px;
+  right: 5px;
+  width: 38px;
+  height: 38px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .seta-topo:hover {
+    background-color: var(--verde-medio);
+    border-color: var(--verde-escuro);
+  }
+  
+
+  .seta-topo::after {
+    content: "";
+    position: absolute;
+
+    transform: translate(-50%, -50%) rotate(-138deg);
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+
+    
+  }  
+
+  .seta-topo::after {
+    top: 50%;
+    left: 50%;
+  }
+
+  .seta-topo:hover::after {
+    opacity: 1;
+  }
+
+  .seta-topo:focus {
+    outline: none;
+  }
+
+  .seta-topo i {
+    margin-right: 5px;
+  }
+
+  .seta-topo {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  .seta-topo.show {
+    opacity: 1;
+  }
+
+#present {
+
+    padding: 60px 30px;
+
+    background-color: #efefec;
+    color: white;
+
+    background-image:  linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #B5CE56 100%), url(../imagens/backgrounds/bnn-breno.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    font-family: 'Urbanist', sans-serif;
+    
+}
+
+h2 {
+    font-family: 'Urbanist', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+#present h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+#present h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#present p {
+    margin-bottom: 30px;
+
+}
+
+#present a {
+    padding: 15px;
+    
+    border: 3px solid white;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#about {
+
+    background-color: #efefec;
+    display: flex;
+    width: 100%;
+    padding: 200px 0px;
+    background-image: url(../imagens/self/looking-phone.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+    
+    
+    
+    
+}#abouttext {
+    width: 50%;
+    padding: 20px;
+}
+
+#smilebg {
+    width: 50%;
+    padding: 20px;
+    
+    
+}
+
+#smilebg img {
+    width: 100%;
+    border: 2px solid var(--verde-claro);
+    border-radius: 20px;
+    border-left: var(--verde-claro);
+}
+
+#about h1 {
+    font-size: 30px;
+    font-family: 'Urbanist', sans-serif;
+    padding: 15px;
+    padding-bottom: 5px;
+    
+    
+}
+
+#about h2 {
+    font-size: 25px;
+    padding: 15px;
+    color: var(--verde-medio);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: light;
+    
+
+}
+
+#about p {
+    padding: 15px;
+    color: rgb(26, 26, 26);
+    
+}
+
+
+
+.subheader {
+    color: var(--verde-escuro);
+    
+}
+
 #faixa-top {
     display: flex;
     justify-content: space-between;
@@ -115,7 +320,7 @@ nav ul li a {
     color: var(--verde-claro);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: right;
     position: relative;
     
@@ -137,4 +342,212 @@ nav ul li a:after {
         width: 100%;
     }
 
+    #present {
+        padding-top: 60px;
+    }
 
+#operation {
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+}
+
+#operation p {
+    margin: 30px 30px 30px 0px;
+}
+
+
+#operation a {
+
+    margin: 10px;
+    padding: 17px;
+    
+    border-radius: 20px;
+
+    background-color: var(--verde-claro);
+    color:white;
+
+    text-decoration: none;
+    
+}
+
+#textop h1 {
+    margin-bottom: 15px;
+}
+
+#textop h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--verde-medio);
+}
+
+#textop p img {
+    width: 300px;
+    border-radius: 30px;
+    border-right: 3px solid var(--verde-claro);
+    padding: 20px;
+    
+    transition: all 400ms linear;
+}
+
+#textop p img:hover {
+    transform: scale(1.1);
+        transition: all 400ms linear;
+}
+
+#listop ul li {
+    padding: 0px 0px 0px 10px;
+    transition: all 400ms linear;
+    list-style-type: none;
+}
+
+#listop ul li:hover {
+    transform: scale(1.1);
+        transition: all 400ms linear;
+}
+
+#listop ul li img {
+    width: 50px;
+    
+    
+}
+
+#listop ul li p {
+    margin: 30px 30px 0px 0px;
+}
+
+#listop ul li {
+    font-weight: bold;
+    padding: 44px;
+    margin-bottom: 30px;
+    margin-left: 44px;
+
+    border: 2px solid var(--verde-claro);
+    border-radius: 20px;
+
+    
+}
+
+#listop ul li p {
+    font-weight: normal;
+}
+
+.question {
+
+    
+
+    padding: 10px;
+    
+    background-color: white;
+
+    border: 2px solid white;
+    border-radius: 20px;
+
+  }
+
+  section h2 {
+    font-family: 'Open sans', sans-serif;
+    font-size: 2em;
+    margin: -13px 5px 31px;
+    text-align: center;
+    color: var(--verde-medio);
+
+  }
+
+.answer {
+    display: none;
+  }
+
+  section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(240, 238, 238);
+    
+  }
+  
+  dt {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+    
+  }
+  
+  dt::before {
+    content: "\002B";
+    position: absolute;
+    left: -20px;
+    color: #000000;
+    font-size: 24px;
+  }
+  
+  dt.active::before {
+    content: "\2212";
+  }
+  
+  dd {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  dt.active + dd {
+    max-height: 1000px;
+    transition: max-height 0.35s ease-in;
+  }
+
+  
+
+  dd.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  dt.active + dd.answer {
+    max-height: 1000px;
+    transition: max-height 0.35s ease-in;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+  }
+
+  footer {
+    background-image:linear-gradient(to right, var(--verde-medio), #90a53270), url(../imagens/backgrounds/pexels-ella-olsson-1640777.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    padding: 40px 100px 100px 100px;
+  }
+
+  footer h1 {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+
+  }
+
+  footer p {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  #sociais {
+    text-align: center;
+    padding: 10px;
+  }
+
+  #sociais img {
+    padding: 10px;
+    width: 50px;
+    
+  }
