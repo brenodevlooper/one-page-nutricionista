@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutricionista Pastori</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
@@ -54,7 +55,7 @@
               </svg>  Agendar Consulta </a></p>
         </article>
         <article id="about">
-            <div id="abouttext">
+            <div id="abouttext" >
                 <h1 class="subheader">Sobre Mim</h1>
                 <h2>Melhorar os hábitos alimentares<br>te transforma por inteiro.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Asperiores esse voluptate deserunt sunt labore adipisci, <br> aperiam, nihil ducimus quod delectus unde veniam <br> distinctio odit incidunt illo perferendis illum nulla officiis!</p>
@@ -103,16 +104,20 @@
     </main>
     <footer id="redes">
         <h1>Contato</h1>
-        <p> <img src="imagens/icons/email.png" alt="icone de e-mail"> leo@hotmail.com.br</p>
-        <p> <img src="imagens/icons/telephone.png" alt="telefone icone">  (28) 00000-0000</p>
+        <p> <img src="imagens/icons/email.png" alt="icone de e-mail"> leopastore2@gmail.com</p>
+        <p> <img src="imagens/icons/telephone.png" alt="telefone icone">  (28) 99991-3655</p>
         <div id="sociais">
             <a href="#"><img src="imagens/icons/whatsapp.png" alt="ícone de whatsapp"></a>
             <a href="#"><img src="imagens/icons/instagram.png" alt="ícone instagram"></a>
             <img src="" alt="">
         </div>
+        
     </footer>
+    <aside id="copy">
+        <p>&copy; 2023│Leonardo Pastore - CRN22 102444</p>
+    </aside>
 
-    <script>
+    <script> //perguntas frequentes
         const questions = document.querySelectorAll('.question');
         
         questions.forEach(question => {
@@ -127,17 +132,8 @@
           });
         });
     </script>
-    <script>
-        window.addEventListener("scroll", function() {
-  var setaTopo = document.querySelector(".seta-topo");
-  if (window.pageYOffset > 0) {
-    setaTopo.classList.add("show");
-  } else {
-    setaTopo.classList.remove("show");
-  }
-});
-    </script>
-    <script>
+    
+    <script> // setinha que aparece e some
        var setaTopo = document.querySelector(".seta-topo");
 
 window.addEventListener("scroll", function() {
@@ -158,6 +154,31 @@ setaTopo.addEventListener("click", function() {
       clearInterval(intervalo);
     }
   }, 10);
+});
+    </script>
+
+    <script>//elemento de animação da direita pra esquerda do #abouttext
+      $(window).scroll(function() {
+  var posicao_top = $('#abouttext').offset().top;
+  var altura_janela = $(window).height();
+  var posicao_janela = $(window).scrollTop();
+
+  if (posicao_top < posicao_janela + altura_janela) {
+    $('#abouttext').addClass('animated');
+  }
+});
+    
+    </script>
+
+    <script>//elemento de animação da direita pra esquerda do #textop
+        $(window).scroll(function() {
+  var posicao_top = $('#textop').offset().top;
+  var altura_janela = $(window).height();
+  var posicao_janela = $(window).scrollTop();
+
+  if (posicao_top < posicao_janela + altura_janela) {
+    $('#textop').addClass('animated');
+  }
 });
     </script>
 </body>
