@@ -19,90 +19,24 @@
 
 
 .seta-topo {
-    position: fixed;
-    
-    z-index: 9999;
-    display: block;
-    
-    text-indent: -9999px;
-    background-color: var(--verde-claro);
-    border: solid var(--verde-medio);
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-    opacity: 0;
-  transition: opacity 0.2s ease-out;
-  animation: fadeIn 1s forwards;
-  
-  bottom: 3px;
-  right: 5px;
-  width: 38px;
-  height: 38px;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
   cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: var(--verde-escuro);
+}
 
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .seta-topo:hover {
-    background-color: var(--verde-medio);
-    border-color: var(--verde-escuro);
-  }
-  
-
-  .seta-topo::after {
-    content: "";
-    position: absolute;
-
-    transform: translate(-50%, -50%) rotate(-138deg);
-    width: 10px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-
-    
-  }  
-
-  .seta-topo::after {
-    top: 50%;
-    left: 50%;
-  }
-
-  .seta-topo:hover::after {
-    opacity: 1;
-  }
-
-  .seta-topo:focus {
-    outline: none;
-  }
+.seta-topo.show {
+  opacity: 1;
+}
 
   .seta-topo i {
     margin-right: 5px;
   }
-
-  .seta-topo {
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-  }
-  
-  .seta-topo.show {
-    opacity: 1;
-  }
+ 
 
 #present {
 
@@ -129,6 +63,7 @@ h2 {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 
 }
 #present h1 {
@@ -380,6 +315,10 @@ nav ul li a:after {
     color: var(--verde-medio);
 }
 
+#textop p {
+  text-align: justify;
+}
+
 #textop p img {
     width: 300px;
     border-radius: 30px;
@@ -400,10 +339,7 @@ nav ul li a:after {
     list-style-type: none;
 }
 
-#listop ul li:hover {
-    transform: scale(1.1);
-        transition: all 400ms linear;
-}
+
 
 #listop ul li img {
     width: 50px;
@@ -413,18 +349,25 @@ nav ul li a:after {
 
 #listop ul li p {
     margin: 30px 30px 0px 0px;
+    text-align: justify;
 }
 
 #listop ul li {
     font-weight: bold;
-    padding: 44px;
+    padding: 30px 0px 30px 10px;
     margin-bottom: 30px;
-    margin-left: 44px;
+    margin-left: 300px;
+    width: 459px;
 
     border: 2px solid var(--verde-claro);
     border-radius: 20px;
 
     
+}
+
+#listop ul li:hover {
+  transform: scale(1.1);
+      transition: all 400ms linear;
 }
 
 #listop ul li p {
