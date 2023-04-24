@@ -121,6 +121,8 @@ p {
     opacity: 0;
   transform: translateX(100%);
   transition: opacity 1.8s ease, transform 1.8s ease;
+  text-align: justify;
+  text-indent: 10px;
 }
 
 #abouttext.animated {
@@ -393,7 +395,7 @@ nav ul li a:after {
     font-weight: bold;
     padding: 30px 0px 30px 10px;
     margin-bottom: 30px;
-    margin-left: 100px;
+    margin-left: 200px;
     width: 459px;
 
     border: 2px solid var(--verde-claro);
@@ -410,6 +412,78 @@ nav ul li a:after {
 #listop ul li p {
     font-weight: normal;
 }
+
+#evolution {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  background-color: var(--verde-medio);
+  color: white;
+
+
+}
+
+
+
+#evotext {
+ 
+  padding: 15px;
+  margin-right: 153px;
+}
+
+#evotext h1 {
+  padding-bottom: 5px;
+  
+  font-size: 3.4em;
+  
+  text-align: center;
+
+  color: var(--verde-escuro);
+}
+
+span {
+  font-weight: bolder;
+}
+
+#evotext h2 {
+    padding: 5px 0px 30px 20px;
+
+    font-size: 1.5em;
+    font-family: 'Open sans', sans-serif;
+
+    text-align: justify;
+
+    color: rgb(27, 27, 27);
+}
+
+#evotext p {
+    padding: 5px 5px 5px 20px;
+    text-align: center;
+   
+    font-style: italic;
+   
+}
+
+
+#evoimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 20px 50px 20px 20px;
+  margin: 10px;
+
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#evoimg img {
+  width: 250px;
+  
+}
+
+
 
 .question {
 
@@ -492,6 +566,10 @@ nav ul li a:after {
     border-radius: 20px;
     background-color: #f8f9fa;
   }
+
+  
+
+
 
   footer {
     background-image:linear-gradient(to right, var(--verde-medio), #90a53270), url(../imagens/backgrounds/pexels-ella-olsson-1640777.jpg);
