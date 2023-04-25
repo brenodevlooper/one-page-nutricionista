@@ -422,6 +422,7 @@ nav ul li a:after {
   color: white;
 
 
+  padding: 15px;
 }
 
 
@@ -429,7 +430,9 @@ nav ul li a:after {
 #evotext {
  
   padding: 15px;
-  margin-right: 153px;
+  margin-right: 100px;
+
+  
 }
 
 #evotext h1 {
@@ -476,11 +479,17 @@ span {
 
   border: 2px solid white;
   border-radius: 5px;
+
+  
 }
 
 #evoimg img {
   width: 250px;
   
+}
+
+#evob {
+  padding: 12px;
 }
 
 
