@@ -91,11 +91,12 @@ p {
     text-decoration: none;
 }
 
-
-
-
-
-
+#present a:hover {
+  border: 2px solid var(--verde-escuro);
+  background-color: var(--verde-escuro);
+  transition: background 1s ease;
+  
+}
 
 
 
@@ -379,10 +380,14 @@ nav ul li a:after {
     
 }
 
+#listop ul li h1 {
+    text-align: center;
+}
+
 #listop ul li p {
     padding: 10px;
     margin: 30px 30px 0px 0px;
-    text-align: justify;
+    text-align: center;
 }
 
 #listop ul li {
@@ -580,7 +585,7 @@ nav ul li a:after {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    background-color: rgb(240, 238, 238);
+    background-color:#efefec;
     
   }
   
