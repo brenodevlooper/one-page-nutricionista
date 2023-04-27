@@ -18,5 +18,12 @@
 
 
 
+#present a:hover {
+    border: 2px solid var(--verde-escuro);
+    background-color: var(--verde-escuro);
+    transition: background 1s ease;
+    
+  }
+
 
 
