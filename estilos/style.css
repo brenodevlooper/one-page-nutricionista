@@ -67,111 +67,11 @@ p {
     text-indent: 10px;
 
 }
-#present h1 {
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-
-#present h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-#present p {
-    margin-bottom: 30px;
-
-}
-
-#present a {
-    padding: 15px;
-    
-    border: 3px solid white;
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-}
-
-#present a:hover {
-  border: 2px solid var(--verde-escuro);
-  background-color: var(--verde-escuro);
-  transition: background 1s ease;
-  
-}
 
 
 
-#about {
-
-    background-color: #efefec;
-    display: flex;
-    width: 100%;
-    padding: 200px 0px;
-    background-image: url(../imagens/self/looking-phone.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-}
 
 
-    
-    
-    
-    
-#abouttext {
-    width: 50%;
-    padding: 20px;
-    opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 1.8s ease, transform 1.8s ease;
-  text-align: justify;
-  text-indent: 10px;
-}
-
-#abouttext.animated {
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-#smilebg {
-    width: 50%;
-    padding: 20px;
-    
-    
-}
-
-#smilebg img {
-    width: 100%;
-    border: 2px solid var(--verde-claro);
-    border-radius: 20px;
-    border-left: var(--verde-claro);
-}
-
-
-
-#about h1 {
-    font-size: 30px;
-    font-family: 'Urbanist', sans-serif;
-    padding: 15px;
-    padding-bottom: 5px;
-    
-    
-}
-
-#about h2 {
-    font-size: 25px;
-    padding: 15px;
-    color: var(--verde-medio);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: light;
-    
-
-}
-
-#about p {
-    padding: 15px;
-    color: rgb(26, 26, 26);
-    
-}
 
 
 
@@ -299,7 +199,146 @@ nav ul li a:after {
 
     #present {
         padding-top: 60px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.269);
     }
+
+    #present h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+  }
+  
+  #present h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+  }
+  
+  #present p {
+      margin-bottom: 30px;
+  
+  }
+  
+  #present a {
+      padding: 15px;
+      
+      border: 3px solid white;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+  }
+  
+  #present a:hover {
+    border: 2px solid var(--verde-escuro);
+    background-color: var(--verde-escuro);
+    transition: background 1s ease;
+    
+  }
+  
+  
+  
+  #about {
+  
+      background-color: #efefec;
+  
+      display: flex;
+      width: 100%;
+      padding: 200px 0px;
+      
+      background-image: url(../imagens/self/looking-phone.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+  
+      box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.269);
+  }
+  
+  
+      
+      
+      
+      
+  #abouttext {
+      width: 50%;
+      padding: 20px;
+      opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1.8s ease, transform 1.8s ease;
+    text-align: justify;
+    text-indent: 10px;
+  
+    border: 2px solid #80808014;
+      border-radius: 20px;
+      margin-left: 34px;
+  
+      background-color: transparent;
+  
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.071);
+  
+      
+  
+      
+  }
+  
+  #abouttext:hover {
+    background-color: var(--verde-claro);
+    
+  
+    transition: background 0.7s ease ;
+    
+  }
+  
+  #abouttext:hover p {
+    color: white;
+   
+  }
+  
+  #abouttext.animated {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  #smilebg {
+      width: 50%;
+      padding: 20px;
+      
+      
+  }
+  
+  #smilebg img {
+      width: 100%;
+      border: 2px solid var(--verde-claro);
+      border-radius: 20px;
+      border-left: var(--verde-claro);
+  }
+  
+  
+  
+  #about h1 {
+      font-size: 30px;
+      font-family: 'Urbanist', sans-serif;
+      padding: 15px;
+      padding-bottom: 5px;
+  
+      color: var(--verde-medio);
+      
+      
+  }
+  
+  #about h2 {
+      font-size: 25px;
+      padding: 15px;
+      color: var(--verde-escuro);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: light;
+      
+  
+  }
+  
+  #about p {
+      padding: 15px;
+      color: rgb(26, 26, 26);
+      
+  }
+
 
 #operation {
     display: flex;
@@ -317,6 +356,7 @@ nav ul li a:after {
 
 #operation p {
     margin: 30px 30px 30px 0px;
+    
 }
 
 
@@ -334,6 +374,7 @@ nav ul li a:after {
     
 }
 
+
 #textop {
   transform: translateX(100%);
       transition: opacity 1.8s ease, transform 1.8s ease;
@@ -346,15 +387,20 @@ nav ul li a:after {
 
 #textop h1 {
     margin-bottom: 15px;
+    font-size: 2em;
 }
 
 #textop h2 {
     font-family: 'Open Sans', sans-serif;
     color: var(--verde-medio);
+
+    font-size: 1.8em;
 }
 
 #textop p {
   text-align: justify;
+  font-size: 23px;
+  text-indent: 0px;
 }
 
 #textop a:hover {
@@ -362,7 +408,12 @@ nav ul li a:after {
   transition: background 0.7s ease ;
 }
 
-
+iframe {
+  
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.269);
+  
+}
 
 
 
@@ -417,6 +468,7 @@ nav ul li a:after {
   flex-direction: row-reverse;
   justify-content: space-between;
   
+  box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.354);
   
   color: white;
   
@@ -553,6 +605,36 @@ nav ul li a:after {
 }
 
 
+.animate-left-to-right {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: appear 3s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    padding: 20px;
+
+    background-color:#efefec;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.381);
+
+}
+
 .question {
 
     
@@ -581,13 +663,7 @@ nav ul li a:after {
     display: none;
   }
 
-  section {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    background-color:#efefec;
-    
-  }
+  
   
   dt {
     cursor: pointer;
@@ -649,6 +725,8 @@ nav ul li a:after {
     background-position: right;
     
     padding: 40px 100px 100px 100px;
+
+    box-shadow: 2px -5px 8px rgba(0, 0, 0, 0.34);
   }
 
   footer h1 {

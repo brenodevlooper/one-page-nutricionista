@@ -125,5 +125,7 @@ p {
 }
 
 
-
+iframe {
+    display: none;
+  }
 

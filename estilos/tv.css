@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+iframe {
+    width: 450px;
+    height: 360px;
+}
+
+#textop p {
+    font-size: 17px;
+}

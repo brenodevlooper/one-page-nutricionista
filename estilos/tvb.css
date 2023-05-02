@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#operation {
+    justify-content: space-between;
+    margin-right: 57px;
+  }
+
+  #textop {
+    border-right: 1px solid #80808057;
+    padding-right: 238px;
+  }
+
+  iframe {
+    width: 560px;
+    height: 360px;
+  }
+
+  #evotext h1 {
+    font-size: 6.4em;
+  }
+
+  #evotext h2 {
+    padding: 54px 0px 62px 20px;
+  }
+
+  #evotext q {
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 24px 5px 5px 20px;
+  }
